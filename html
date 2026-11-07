@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katiwalian Comic Project</title>
+    <style>
+        :root {
+            --primary-color: #593825;
+            --bg-color: #fcf8f2;
+            --card-bg: #ffffff;
+            --accent-green: #eef5ed;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 22px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #f0e6de;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555555;
+            font-size: 15px;
+        }
+
+        .subject-card {
+            background-color: var(--accent-green);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 15px;
+            border-left: 5px solid #2e7d32;
+        }
+
+        .subject-card h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .comic-panel {
+            margin-bottom: 20px;
+        }
+
+        .comic-panel img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid #dddddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .comic-panel p {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            font-size: 14px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 90px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .back-to-top {
+            display: block;
+            width: fit-content;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#comic">Our Comic</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="about" class="card">
+            <h2>About Our Comic</h2>
+            <p><strong>KATIWALIAN: "Ang Boto Mo Bukas, Ibinenta Mo Ngayon"</strong></p>
+            <p>Our comic explores the serious issue of vote-buying and patronage politics, blending satire with eye-opening realities. It shows how short-term monetary gains during elections lead to long-term community struggles like poor infrastructure, lack of clean water, and health hazards.</p>
+            <p>Through this story, we remind everyone that protecting our future and demanding transparency is an active civic duty.</p>
+        </section>
+
+        <section id="subjects" class="card">
+            <h2>Integration of Different Subjects</h2>
+            
+            <div class="subject-card">
+                <h3>Mathematics 10</h3>
+                <p><strong>Synthetic Division & Remainder Theorem:</strong> Using polynomial equations like P(3) = 0 to calculate values, showing how funds vanish completely on paper just like election budgets allocated for vote-buying.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Araling Panlipunan 10 & EsP</h3>
+                <p><strong>Patronage Politics & Free Will:</strong> Analyzing the societal impact of vote-buying and highlighting moral responsibility, active citizenship, and conscience-based decision making.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>Science 10 & MAPEH Health</h3>
+                <p><strong>Environmental Impact:</strong> Examining violations of R.A. 9003 (Solid Waste Management Act) through campaign litter clogging drainage systems, leading to health risks like Dengue and Leptospirosis.</p>
+            </div>
+
+            <div class="subject-card">
+                <h3>English 10 & Filipino 10</h3>
+                <p><strong>Grammar, Moods & Satire:</strong> Incorporating Indicative, Subjunctive, and Imperative moods along with parallel structures to deliver powerful narrative captions and calls to action.</p>
+            </div>
+        </section>
+
+        <section id="comic" class="card">
+            <h2>Meet Our Comic</h2>
+            <p>Explore our story panels and discover its message.</p>
+
+            <div class="comic-panel">
+                <img src="panel1.jpg" alt="Panel 1">
+                <p>Panel 1: Ang Pila ng Sobre at ang Laro ng Softball</p>
+            </div>
+
+            <div class="comic-panel">
+                <img src="panel2.jpg" alt="Panel 2">
+                <p>Panel 2: Softball Field (Teamwork at Komunikasyon)</p>
+            </div>
+
+            <div class="comic-panel">
+                <img src="panel3.jpg" alt="Panel 3">
+                <p>Panel 3: Ang Math ng Boto (Synthetic Division)</p>
+            </div>
+
+            <div class="comic-panel">
+                <img src="panel4.jpg" alt="Panel 4">
+                <p>Panel 4: Basura ng Eleksyon at Sakit sa Komunidad</p>
+            </div>
+        </section>
+
+        <section id="feedback" class="card">
+            <h2>Share Your Thoughts</h2>
+            <form onsubmit="alert('Thank you for your feedback!'); return false;">
+                <p>What do you think about the issue in our comic?</p>
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="opinion">Your Opinion:</label>
+                <textarea id="opinion" name="opinion" placeholder="Share your thoughts..." required></textarea>
+
+                <label for="solution">Your Suggested Solution:</label>
+                <textarea id="solution" name="solution" placeholder="What can we do to solve this issue?" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <a href="#about" class="back-to-top">Back to Top ↑</a>
+
+    </div>
+
+</body>
+</html>
